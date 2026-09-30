@@ -1,0 +1,3 @@
+import React from 'react';import {ActivityIndicator,Text,View} from 'react-native';import {styles} from '../theme/styles';import {colors} from '../theme/colors';
+export function LoadingState(){return <View style={{padding:30,alignItems:'center'}}><ActivityIndicator color={colors.primary}/><Text style={[styles.muted,{marginTop:10}]}>Loading shifts…</Text></View>}
+export function ErrorState({message,onRetry}:{message:string;onRetry:()=>void}){return <View style={styles.error}><Text style={styles.errorText}>{message}</Text><Text onPress={onRetry} style={[styles.errorText,{fontWeight:'800',marginTop:7}]}>Retry</Text></View>}

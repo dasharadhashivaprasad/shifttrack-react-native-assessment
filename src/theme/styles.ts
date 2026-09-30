@@ -1,0 +1,7 @@
+import {StyleSheet} from 'react-native';
+import {colors} from './colors';
+export const styles = StyleSheet.create({
+  screen:{flex:1,backgroundColor:colors.bg}, content:{padding:20}, title:{fontSize:28,fontWeight:'800',color:colors.text,marginBottom:6}, subtitle:{fontSize:15,color:colors.muted,marginBottom:20},
+  card:{backgroundColor:colors.card,borderRadius:16,padding:16,marginBottom:14,borderWidth:1,borderColor:colors.border}, label:{fontSize:13,fontWeight:'700',color:colors.muted,marginBottom:7}, input:{height:50,borderWidth:1,borderColor:colors.border,borderRadius:10,paddingHorizontal:14,color:colors.text,backgroundColor:colors.card,fontSize:16,marginBottom:14},
+  button:{height:50,borderRadius:10,alignItems:'center',justifyContent:'center',backgroundColor:colors.primary,marginBottom:12}, buttonText:{color:'#fff',fontSize:16,fontWeight:'800'}, secondaryButton:{height:46,borderRadius:10,alignItems:'center',justifyContent:'center',borderWidth:1,borderColor:colors.border,backgroundColor:colors.card}, secondaryText:{color:colors.text,fontWeight:'700'}, error:{padding:12,borderRadius:10,backgroundColor:colors.dangerBg,marginBottom:14}, errorText:{color:colors.danger,fontSize:14}, empty:{alignItems:'center',padding:30}, muted:{color:colors.muted}, row:{flexDirection:'row',alignItems:'center',justifyContent:'space-between'}, badge:{paddingHorizontal:9,paddingVertical:5,borderRadius:999}, badgeText:{fontSize:12,fontWeight:'800'}, stat:{fontSize:24,fontWeight:'800',color:colors.text}, small:{fontSize:12,color:colors.muted}
+});
